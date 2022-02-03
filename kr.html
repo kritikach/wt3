@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html><head>
+    <meta name="viewport"  
+          content="width=device-width, initial-scale=1">
+    <style>
+    html, body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .flex-master {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+        overflow: auto;
+    }
+    .page-header {
+        flex: none; 
+        padding: 15px;
+        font-size: 3em;
+        font-weight: bold;
+        background: #ee5d38;
+        color: rgb(255, 255, 255);
+    }
+    .page-content {
+        flex: 1;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .sidebar-left {
+        flex: none;
+        background: #180101;
+        padding: 20px;
+        width: 200px;
+        overflow: auto;
+        color: rgb(218, 10, 10);
+    }
+
+    .splitter {
+        flex: none;
+        width: 17px;
+        cursor: col-resize;
+        background: #180606;
+    }
+    .content-container {
+        flex: 1 1 auto;
+        background: rgb(247, 98, 98);
+        padding: 20px;
+        width: 100%;
+        overflow-y: auto;
+
+        display: flex; 
+        flex-direction: row;
+    }
+    .main-content {
+        flex: 1 1 auto;
+        width: 100%;
+        padding: 10px;
+    }
+    .page-ads {
+        flex: 0 0 auto;
+        width: 180px;
+        overflow: hidden;
+
+        display: flex; 
+        flex-direction: column;
+    }
+    .ad {
+        flex: none;
+        align-self: center;
+        padding: 5px;
+        margin: 15px;
+        width: 150px;
+        height: 150px;
+        background: rgb(21, 22, 22);
+        overflow: hidden;
+
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        flex: 0 0 auto;
+        background: #535353;
+        color: white;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-master">
+        <header class="page-header">
+            France
+        </header>
+
+    <div class="page-content">
+        <nav class="sidebar-left">
+            <h3>Cities in France</h3>
+            <ul>
+                <li>Lyon</li>
+                <li>Lille</li>
+            </ul>
+        </nav>
+        <div class="splitter">
+        </div>
+        <div class="content-container">
+            <article class="main-content">
+                Lyon, also spelled Lyons, capital of both the Rhône département and the Auvergne-Rhône-Alpes région, east-central France, set on a hilly site at the confluence of the Rhône and Saône rivers. It is the third largest city in France, after Paris and Marseille.
+                Lyon is one of the most important cities in France and is often considered as the capital city of French gastronomy. It’s one of the largest metropolises in the country. Founded by the Romans over 2,000 year ago, you can seemingly travel back in time by strolling around Old Lyon, La Croix-Rousse and Fourvière. These central districts have a quaint vintage atmosphere as well as splendid old buildings.
+
+Lyon is a city where it feels good to live. Enjoy lunch in the friendly atmosphere of a bouchon (typical bistro) then go to visit the place where cinematography was invented, before ending your day at one of the trendy restaurants of la Presqu’île district. 
+                <hr />
+                Lille is the capital of the Hauts-de-France region in northern France, near the border with Belgium. A cultural hub and bustling university city today, it was once an important merchant center of French Flanders, and many Flemish influences remain. The historic center, Vieux Lille, is characterized by 17th-century brick town houses, cobbled pedestrian streets and the large central square, Grand Place
+                With Tourcoing and Roubaix, Lille forms one of the largest conurbations in France. Its commercial and industrial activities have been stimulated by its proximity to the northern countries of the European Union (EU) and by its good communications location. It is an important railway junction with high-speed rail links to London, Brussels, Paris, and other regions of southern and western France. It is served by a regional airport and a river port, and it lies at the hub of an extensive network of highways.
+                <hr />  ...
+            </article>
+            <aside class="page-ads">
+                <div class="ad">
+                    Ad
+                </div>
+                <div class="ad">
+                    Ad
+                </div>  ...
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <small>UI By Kritika Chitkara</small>
+    </footer>
+</div>
+</body></html>
